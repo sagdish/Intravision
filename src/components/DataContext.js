@@ -30,7 +30,7 @@ export const DataProvider = (props) => {
       )
       .then(tasks => {
         console.log(tasks);
-        setData({tasks, isLoading: false});
+        setData({tasks, isLoading: true});
       })
       .catch(err => console.log("error in effect hook: ", err));
   }, [])
