@@ -1,0 +1,11 @@
+.sider {
+  display: border-box;
+  background-color: darkblue;
+  padding: 10px;
+  width: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  color: white;
+}

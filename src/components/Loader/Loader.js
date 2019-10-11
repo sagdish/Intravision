@@ -12,3 +12,5 @@ export default function Loader() {
     </div>
   );
 }
+
+// this component is purely for loading animation while data is being fetched

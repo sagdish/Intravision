@@ -23,6 +23,7 @@ export const DataProvider = (props) => {
       .then(response => 
           response.value.map(task => {
           // console.log(task);
+          // get associated data in its own variables:
           const { id, name, description, statusName, statusRgb, executorName } = task;
           // console.log(id, name, description, statusName, statusRgb, executorName)
           return { id, name, description, statusName, statusRgb, executorName };
@@ -30,7 +31,8 @@ export const DataProvider = (props) => {
       )
       .then(tasks => {
         console.log(tasks);
-        setData({tasks, isLoading: true});
+        // set data to state:
+        setData({tasks, isLoading: false});
       })
       .catch(err => console.log("error in effect hook: ", err));
   }, [])
