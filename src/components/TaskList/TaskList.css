@@ -1,3 +1,54 @@
 .taskList {
   margin-left: 120px;
+  /* width: 660px; */
 }
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin: 17px 0 30px;
+}
+
+.createButton {
+  width: 140px;
+  height: 33px;
+  text-align: center;
+  background-color: #018CF1;
+  border-radius: 50px;
+  color: white;
+  vertical-align: center;
+  font-size: 12px;
+}
+
+/* .table {
+  width: 650px;
+  display: flex;
+} */
+
+p {
+  font-size: 14px;
+  /* margin: 5px 30px; */
+}
+
+.head {
+  display: flex;
+  font-weight: bold;
+}
+
+.row {
+  display: flex;
+  border-top: 1px solid black;
+  height: 40px;
+  max-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.head p {
+  margin: 5px 50px;
+}
+
+.row p {
+  margin: 5px 30px;
+}
+
