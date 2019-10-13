@@ -1,0 +1,17 @@
+.header {
+  background-color: #D2E0ED;
+  height: 53px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.input {
+  border: 1px solid #54B1FD;
+  margin-left: 120px;
+  border-radius: 50px;
+  width: 450px;
+  height: 33px;
+  text-align: right;
+  font-size: 14px;
+}

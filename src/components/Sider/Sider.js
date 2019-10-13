@@ -13,7 +13,7 @@ import './Sider.css'
 export default function Sider() {
   return(
     <div className="sider">
-      <Check className= "sider-menu" size="30" color="white" />
+      <Check className= "sider-menu" size="35" color="white" />
       <div className="sider-menu">
         <BookBookmark size="30" color="white" />
         <div>База знаний</div>
