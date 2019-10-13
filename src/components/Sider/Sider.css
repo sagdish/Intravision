@@ -1,11 +1,25 @@
 .sider {
-  display: border-box;
-  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #022138;
   padding: 10px;
-  width: 90px;
+  width: 94px;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
-  color: white;
+  color: #A5BDC6;
+  font-size: 12px;
+}
+
+.sider-menu {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 10px 0px 15px;
+}
+
+.sider-menu > * {
+  align-self: center;
 }

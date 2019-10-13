@@ -9,14 +9,29 @@ export default function TaskList(props) {
 
   return (
     <>
-      {/* if fetcing data show loader first: */}
+      {/* if fetcing data, show loader first: */}
       {data.isLoading ? <Loader /> : (
         <div className="taskList">
-            {data.tasks.map(task=>
-            <div key={task.id}>
-              {task.id} {task.name} {task.statusName}
-            </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Название</th>
+                <th>Статус</th>
+                <th>Исполнитель</th>
+              </tr>
+            </thead>
+          {data.tasks.map(task=>
+                <tbody key={task.id}>
+                  <tr>
+                    <td>{task.id}</td>
+                    <td>{task.name}</td>
+                    <td>{task.statusName}</td>
+                    <td>{task.executorName}</td>
+                  </tr>
+                </tbody>
           )}
+          </table>
         </div>
       )}
     </>

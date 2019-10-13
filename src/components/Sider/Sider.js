@@ -13,19 +13,31 @@ import './Sider.css'
 export default function Sider() {
   return(
     <div className="sider">
-      <Check size="40" color="white" title ="База знаний" />
-      <BookBookmark size="40" color="white" />
-      <div>База знаний</div>
-      <File size="40" color="white" />
-      <div>Заявки</div>
-      <Users size="40" color="white" />
-      <div>Сотрудники</div>
-      <BuildingHouse size="40" color="white" />
-      <div>Клиенты</div>
-      <Display size="40" color="white" />
-      <div>Активы</div>
-      <Gear size="40" color="white" />
-      <div>Настройки</div>
+      <Check className= "sider-menu" size="30" color="white" />
+      <div className="sider-menu">
+        <BookBookmark size="30" color="white" />
+        <div>База знаний</div>
+      </div>
+      <div className="sider-menu">
+        <File size="30" color="white" />
+        <div>Заявки</div>
+      </div>
+      <div className="sider-menu">
+        <Users size="30" color="white" />
+        <div>Сотрудники</div>
+      </div>
+      <div className="sider-menu">
+        <BuildingHouse size="30" color="white" />
+        <div>Клиенты</div>
+      </div>
+      <div className="sider-menu">
+        <Display size="30" color="white" />
+        <div>Активы</div>
+      </div>
+      <div className="sider-menu">
+        <Gear size="30" color="white" />
+        <div>Настройки</div>
+      </div>
     </div>
   );
 }
