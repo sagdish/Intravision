@@ -38,10 +38,12 @@ p {
 .row {
   display: flex;
   border-top: 1px solid black;
-  height: 40px;
-  max-height: 40px;
+  height: 45px;
+  /* max-height: 40px; */
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: pre-wrap;
+  resize: both;
 }
 
 .head p {

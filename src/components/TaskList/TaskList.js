@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import LinesEllipsis from 'react-lines-ellipsis';
 
 import Loader from '../Loader/Loader';
 import './TaskList.css';
@@ -27,9 +28,16 @@ export default function TaskList(props) {
               {data.tasks.map(task =>
                 <div className="row" key={task.id}>
                   <p>{task.id}</p>
-                  <p style={{width: "300px"}}>{task.name}</p>
+                  <p style={{width: "300px"}}>
+                  <LinesEllipsis
+                    text={task.name}
+                    maxLine="2"
+                    basedOn="letters"
+                  />
+                  </p>
                   <p>{task.statusName}</p>
                   <p>{task.executorName}</p>
+                 
                 </div>
               )}
             </div>
